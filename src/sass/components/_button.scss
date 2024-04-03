@@ -1,0 +1,20 @@
+.btn {
+    @extend .py-2;
+
+    color: map-get($colors, natural);
+    background: map-get($colors, success);
+    border-radius: 20px;
+
+    span {
+        @extend .px-7;
+    }
+
+}
+
+svg {
+    @extend .p-2;
+    @extend .font-size-18;
+    color: map-get($colors, natural);
+    background: map-get($colors, success);
+    border-radius: 50%;
+}
