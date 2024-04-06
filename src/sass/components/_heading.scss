@@ -1,0 +1,7 @@
+.heading{
+    h1{
+        @extend .font-size-70;
+        color: map-get($colors, natural );
+        
+    }
+}

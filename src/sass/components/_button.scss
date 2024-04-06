@@ -1,6 +1,9 @@
 .btn {
     @extend .py-2;
-
+    @extend .flex-container;
+    @extend .flex-justify-center;
+    
+    width: 200px;
     color: map-get($colors, natural);
     background: map-get($colors, success);
     border-radius: 20px;

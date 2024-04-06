@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "./logo.png";
+import logo from "../../images/logo.png";
 import { Link } from "react-scroll";
 import Button from "../Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

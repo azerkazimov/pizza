@@ -17,6 +17,7 @@ html {
 body {
   position: relative;
   background-color: #000;
+  color: #fff;
 }
 
 main {
@@ -183,7 +184,7 @@ a {
   padding-bottom: 20px !important;
 }
 
-.p-5 {
+.p-5, #header .header-image {
   padding: 25px !important;
 }
 
@@ -982,7 +983,7 @@ a {
   align-items: end !important;
 }
 
-.flex-justify-center {
+.flex-justify-center, .btn {
   justify-content: center !important;
 }
 
@@ -1426,7 +1427,7 @@ a {
     margin-left: 41.6666666667%;
   }
 }
-.flex-container, nav ul li a {
+.flex-container, .btn, nav ul li a {
   display: flex;
 }
 
@@ -1818,7 +1819,7 @@ a {
   font-size: 69px !important;
 }
 
-.font-size-70 {
+.font-size-70, .heading h1 {
   font-size: 70px !important;
 }
 
@@ -2054,17 +2055,53 @@ a {
   nav .burger-menu {
     display: flex !important;
   }
+  .header-image .slice {
+    right: -35px !important;
+  }
+  .header-image .fries {
+    left: -50px !important;
+  }
 }
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .container {
     max-width: 720px !important;
   }
 }
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .container {
     max-width: 540px !important;
   }
 }
+#header {
+  position: relative;
+  top: 150px;
+}
+#header .header-image {
+  position: relative;
+}
+#header .header-image .pizza img {
+  border-radius: 46px;
+  z-index: 1;
+}
+#header .header-image .slice,
+#header .header-image .fries {
+  position: absolute;
+  width: 50%;
+  z-index: -1;
+  opacity: 0.8;
+}
+#header .header-image .slice {
+  top: -40px;
+  right: -100px;
+}
+#header .header-image .fries {
+  bottom: -50px;
+  left: -100px;
+}
+#header .header-image img {
+  width: 100%;
+}
+
 nav {
   position: fixed;
   left: 0;
@@ -2116,6 +2153,7 @@ nav .burger-menu span {
 }
 
 .btn {
+  width: 200px;
   color: #fff;
   background: linear-gradient(to right, #ff6432, #ffa228);
   border-radius: 20px;
@@ -2124,4 +2162,8 @@ svg {
   color: #fff;
   background: linear-gradient(to right, #ff6432, #ffa228);
   border-radius: 50%;
+}
+
+.heading h1 {
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

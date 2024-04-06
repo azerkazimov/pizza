@@ -68,21 +68,30 @@
       display: flex !important;
     }
 
-    
+
+  }
+
+  .header-image {
+    .slice {
+      right: -35px !important;
+    }
+
+    .fries {
+      left: -50px !important;
+    }
   }
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .container {
     max-width: 720px !important;
   }
 
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .container {
     max-width: 540px !important;
   }
-
 
 }
