@@ -1,7 +1,23 @@
 // nav bar section sticky style
 #header {
-    position: relative;
-    top: 150px;
+    margin-top: 150px;
+
+    .header-content {
+        p {
+            @extend .py-3;
+            color: map-get($colors, info )
+        }
+
+        iframe{
+            @extend .my-3;
+            border-radius: 20px;
+        }
+
+        .btn-order{
+            position: relative;
+            @extend .flex-container;
+        }
+    }
 
     .header-image {
         @extend .p-5;
@@ -22,8 +38,8 @@
         }
 
         .slice {
-            top: -40px;
-            right: -100px;
+            top: -82px;
+            right: -35px;
         }
 
         .fries {

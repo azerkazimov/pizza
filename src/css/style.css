@@ -119,12 +119,13 @@ a {
   padding-right: 10px !important;
 }
 
-.py-2, .btn {
+.py-2, #pizza-list .pizza-item .pizza-price .count span:nth-child(1),
+#pizza-list .pizza-item .pizza-price .count span:nth-child(3) {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
 }
 
-.p-3 {
+.p-3, #pizza-list .pizza-item .pizza-size span {
   padding: 15px !important;
 }
 
@@ -144,12 +145,13 @@ a {
   padding-left: 15px !important;
 }
 
-.px-3 {
+.px-3, #pizza-list .pizza-item .pizza-price .count span:nth-child(1),
+#pizza-list .pizza-item .pizza-price .count span:nth-child(3) {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
 
-.py-3 {
+.py-3, #header .header-content p {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
 }
@@ -428,7 +430,7 @@ a {
   margin: 10px !important;
 }
 
-.mt-2 {
+.mt-2, #pizza-list .pizza-item .btn-order {
   margin-top: 10px !important;
 }
 
@@ -474,12 +476,12 @@ a {
   margin-left: 15px !important;
 }
 
-.mx-3 {
+.mx-3, #pizza-list .pizza-item .pizza-price .count span:nth-child(2) {
   margin-left: 15px !important;
   margin-right: 15px !important;
 }
 
-.my-3 {
+.my-3, #header .header-content iframe {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
 }
@@ -522,7 +524,7 @@ a {
   margin-top: 25px !important;
 }
 
-.mb-5 {
+.mb-5, #pizza-list .pizza-item .btn-order {
   margin-bottom: 25px !important;
 }
 
@@ -983,15 +985,15 @@ a {
   align-items: end !important;
 }
 
-.flex-justify-center, .btn {
+.flex-justify-center, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-menu, .btn {
   justify-content: center !important;
 }
 
-.flex-align-center {
+.flex-align-center, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item, .btn-menu, .btn {
   align-items: center !important;
 }
 
-.flex-justify-space-between {
+.flex-justify-space-between, #pizza-list .pizza-item .pizza-price {
   justify-content: space-between !important;
 }
 
@@ -1427,11 +1429,11 @@ a {
     margin-left: 41.6666666667%;
   }
 }
-.flex-container, .btn, nav ul li a {
+.flex-container, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .pizza-price, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-store, .btn-menu, .btn, nav ul li a, #header .header-content .btn-order {
   display: flex;
 }
 
-.flex-column {
+.flex-column, #pizza-list .pizza-item {
   flex-direction: column;
 }
 
@@ -1471,40 +1473,28 @@ a {
   border-color: linear-gradient(to right, #ff6432, #ffa228) !important;
 }
 
+.bg-accept {
+  background-color: linear-gradient(to right, #ffa228, #ec5a29) !important;
+}
+
+.text-accept {
+  color: linear-gradient(to right, #ffa228, #ec5a29) !important;
+}
+
+.border-accept {
+  border-color: linear-gradient(to right, #ffa228, #ec5a29) !important;
+}
+
 .bg-info {
-  background-color: #832BC1 !important;
+  background-color: #a3a3a3 !important;
 }
 
 .text-info {
-  color: #832BC1 !important;
+  color: #a3a3a3 !important;
 }
 
 .border-info {
-  border-color: #832BC1 !important;
-}
-
-.bg-good {
-  background-color: #ABFFE0 !important;
-}
-
-.text-good {
-  color: #ABFFE0 !important;
-}
-
-.border-good {
-  border-color: #ABFFE0 !important;
-}
-
-.bg-danger {
-  background-color: #d9534f !important;
-}
-
-.text-danger {
-  color: #d9534f !important;
-}
-
-.border-danger {
-  border-color: #d9534f !important;
+  border-color: #a3a3a3 !important;
 }
 
 .bg-light {
@@ -1595,7 +1585,7 @@ a {
   font-size: 13px !important;
 }
 
-.font-size-14 {
+.font-size-14, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item p {
   font-size: 14px !important;
 }
 
@@ -1635,7 +1625,7 @@ a {
   font-size: 23px !important;
 }
 
-.font-size-24 {
+.font-size-24, #pizza-list .pizza-item .pizza-price .count span:nth-child(2), #pizza-list .pizza-item .pizza-price .price, #pizza-list .pizza-item h3 {
   font-size: 24px !important;
 }
 
@@ -1975,7 +1965,7 @@ a {
   font-weight: 400 !important;
 }
 
-.font-weight-500 {
+.font-weight-500, #pizza-list .pizza-item .pizza-price .price {
   font-weight: 500 !important;
 }
 
@@ -1983,7 +1973,7 @@ a {
   font-weight: 600 !important;
 }
 
-.font-weight-700 {
+.font-weight-700, #pizza-list .pizza-item .btn-order:hover, #pizza-list .pizza-item .btn-ingridient:hover, #pizza-list .pizza-item .pizza-size span:hover {
   font-weight: 700 !important;
 }
 
@@ -2073,8 +2063,16 @@ a {
   }
 }
 #header {
+  margin-top: 150px;
+}
+#header .header-content p {
+  color: #a3a3a3;
+}
+#header .header-content iframe {
+  border-radius: 20px;
+}
+#header .header-content .btn-order {
   position: relative;
-  top: 150px;
 }
 #header .header-image {
   position: relative;
@@ -2091,8 +2089,8 @@ a {
   opacity: 0.8;
 }
 #header .header-image .slice {
-  top: -40px;
-  right: -100px;
+  top: -82px;
+  right: -35px;
 }
 #header .header-image .fries {
   bottom: -50px;
@@ -2122,7 +2120,7 @@ nav ul li a {
   line-height: 43px;
   font-size: 0.9rem;
   transition: all 0.2s ease;
-  color: #fff;
+  color: #a3a3a3;
 }
 nav ul li a:hover {
   color: #ff6432;
@@ -2154,16 +2152,128 @@ nav .burger-menu span {
 
 .btn {
   width: 200px;
+  height: 45px;
   color: #fff;
   background: linear-gradient(to right, #ff6432, #ffa228);
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
+.btn:hover {
+  background: linear-gradient(to right, #ffa228, #ec5a29);
+}
+
+.btn-transparent {
+  position: absolute;
+  left: 165px;
+  background: transparent;
+  border: 2px solid #ff6432;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.btn-transparent:hover {
+  background: #ffa228;
+}
+
+.btn-menu {
+  width: 200px;
+  height: 45px;
+  color: #fff;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  background: transparent;
+  border: 2px solid #ff6432;
+}
+.btn-menu:hover {
+  background: linear-gradient(to right, #ffa228, #ec5a29);
+}
+
+.active-btn {
+  background-color: #ffa228;
+  border: 2px solid #ffa228;
+}
+
+.btn-store {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 svg {
   color: #fff;
   background: linear-gradient(to right, #ff6432, #ffa228);
   border-radius: 50%;
 }
 
+.heading {
+  margin: 0 auto;
+}
 .heading h1 {
   color: #fff;
+}
+
+#pizza-list .pizza-item {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #121212, #151515);
+  box-shadow: 20px 20px 60px #111111, -20px -20px 60px #171717;
+  gap: 15px;
+}
+#pizza-list .pizza-item img {
+  width: 100%;
+}
+#pizza-list .pizza-item p {
+  color: #a3a3a3;
+}
+#pizza-list .pizza-item .pizza-size {
+  gap: 15px;
+}
+#pizza-list .pizza-item .pizza-size span {
+  color: #a3a3a3;
+  border: 2px solid #a3a3a3;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+#pizza-list .pizza-item .pizza-size span:hover {
+  background-color: #ffa228;
+  color: #fff;
+  border: 2px solid #ffa228;
+}
+#pizza-list .pizza-item .btn-ingridient {
+  width: 200px;
+  height: 40px;
+  color: #ff6432;
+  border: 2px solid #ff6432;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+#pizza-list .pizza-item .btn-ingridient:hover {
+  background-color: #ff6432;
+  color: #fff;
+}
+#pizza-list .pizza-item .pizza-price {
+  gap: 30px;
+}
+#pizza-list .pizza-item .pizza-price .count span:nth-child(1),
+#pizza-list .pizza-item .pizza-price .count span:nth-child(3) {
+  border-radius: 50px;
+  border: 2px solid #a3a3a3;
+  width: 30px;
+  height: 30px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+#pizza-list .pizza-item .pizza-price .count span:nth-child(1):hover,
+#pizza-list .pizza-item .pizza-price .count span:nth-child(3):hover {
+  background-color: #ffa228;
+  border: 2px #ffa228;
+}
+#pizza-list .pizza-item .btn-order {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ffa228;
+  transition: all 0.2s ease;
+}
+#pizza-list .pizza-item .btn-order:hover {
+  background-color: #ff6432;
 }/*# sourceMappingURL=style.css.map */

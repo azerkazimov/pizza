@@ -1,16 +1,65 @@
 .btn {
-    @extend .py-2;
     @extend .flex-container;
     @extend .flex-justify-center;
-    
+    @extend .flex-align-center;
+
     width: 200px;
+    height: 45px;
     color: map-get($colors, natural);
     background: map-get($colors, success);
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
 
     span {
         @extend .px-7;
     }
+
+    &:hover {
+        background: map-get($colors, accept);
+    }
+}
+
+.btn-transparent {
+    position: absolute;
+    left: 165px;
+    background: transparent;
+    border: 2px solid map-get($colors, primary);
+    z-index: -1;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: map-get($colors, secondary);
+    }
+}
+
+.btn-menu {
+    @extend .flex-container;
+    @extend .flex-justify-center;
+    @extend .flex-align-center;
+
+    width: 200px;
+    height: 45px;
+    color: map-get($colors, natural);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+
+    background: transparent;
+    border: 2px solid map-get($colors, primary);
+
+    &:hover {
+        background: map-get($colors, accept);
+    }
+}
+
+.active-btn {
+    background-color: map-get($colors, secondary);
+    border: 2px solid map-get($colors, secondary);
+}
+
+.btn-store {
+    @extend .flex-container;
+    flex-wrap: wrap;
+    gap: 10px;
 
 }
 

@@ -28,7 +28,7 @@ nav {
                 line-height: 43px;
                 font-size: 0.9rem;
                 transition: all 0.2s ease;
-                color: #fff;
+                color: map-get($colors, info );
 
                 &:hover {
                     color: map-get($colors, primary);

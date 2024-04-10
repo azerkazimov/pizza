@@ -1,0 +1,129 @@
+#pizza-list {
+    .pizza-item {
+        @extend .flex-container;
+        @extend .flex-column;
+        @extend .flex-justify-center;
+        @extend .flex-align-center;
+
+        border-radius: 50px;
+        background: linear-gradient(145deg, #121212, #151515);
+        box-shadow: 20px 20px 60px #111111,
+            -20px -20px 60px #171717;
+
+        gap: 15px;
+
+        img {
+            width: 100%;
+        }
+
+        h3 {
+            @extend .font-size-24;
+        }
+
+        p {
+            @extend .font-size-14;
+            color: map-get($colors, info);
+        }
+
+        .pizza-size {
+            @extend .flex-container;
+            @extend .flex-justify-center;
+
+            gap: 15px;
+
+            span {
+                @extend .p-3;
+                color: map-get($colors, info);
+                border: 2px solid map-get($colors, info);
+                border-radius: 50%;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    @extend .font-weight-700;
+                    background-color: map-get($colors, secondary);
+                    color: map-get($colors, natural);
+                    border: 2px solid map-get($colors, secondary);
+                }
+            }
+        }
+
+        .btn-ingridient {
+            @extend .flex-container;
+            @extend .flex-justify-center;
+            @extend .flex-align-center;
+            @extend .font-size-14;
+
+            width: 200px;
+            height: 40px;
+            color: map-get($colors, primary);
+            border: 2px solid map-get($colors , primary);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+                @extend .font-weight-700;
+                background-color: map-get($colors, primary);
+                color: map-get($colors, natural);
+            }
+        }
+
+        .pizza-price {
+            @extend .flex-container;
+            @extend .flex-justify-space-between;
+            gap: 30px;
+
+            .price {
+                @extend .font-size-24;
+                @extend .font-weight-500;
+
+            }
+
+            .count {
+
+                span:nth-child(1),
+                span:nth-child(3) {
+                    @extend .py-2;
+                    @extend .px-3;
+                    border-radius: 50px;
+                    border: 2px solid map-get($colors, info);
+                    width: 30px;
+                    height: 30px;
+                    transition: all 0.2s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: map-get($colors, secondary);
+                        border: 2px map-get($colors, secondary);
+                    }
+                }
+
+                span:nth-child(2) {
+                    @extend .mx-3;
+                    @extend .font-size-24;
+                }
+
+            }
+        }
+
+        .btn-order {
+            @extend .flex-container;
+            @extend .flex-justify-center;
+            @extend .flex-align-center;
+            @extend .mt-2;
+            @extend .mb-5;
+
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: map-get($colors, secondary);
+            transition: all 0.2s ease;
+
+            &:hover {
+                @extend .font-weight-700;
+                background-color: map-get($colors, primary);
+            }
+        }
+    }
+}
