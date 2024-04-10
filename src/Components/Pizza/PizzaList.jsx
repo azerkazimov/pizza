@@ -7,11 +7,6 @@ function PizzaList() {
       <div className="container">
         <div className="row">
           <Pizza />
-          <Pizza />
-          <Pizza />
-          <Pizza />
-          <Pizza />
-          <Pizza />
         </div>
       </div>
     </div>
