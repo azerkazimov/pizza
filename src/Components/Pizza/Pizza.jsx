@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import pizza from "../../images/pizza/italian.png";
+// import data from "../../db/pizza.json";
+// import axios from "axios";
 
 function Pizza() {
   const [count, setCount] = useState(1);
@@ -10,6 +12,16 @@ function Pizza() {
   useEffect(() => {
     setPrice((count * fixPrice).toFixed(2));
   }, [count, fixPrice]);
+
+//   useEffect(() => {
+//     axios.get(data)
+//       .then(response => {
+//         console.log(response.data);
+//       })
+//       .catch(error => {
+//         console.error('Error fetching data:', error);
+//       });
+//   }, []);
 
   const handleDecrement = () => {
     if (count > 1) {
@@ -36,9 +48,9 @@ function Pizza() {
         <div className="pizza-price">
           <div className="price">{price}$</div>
           <div className="count">
-            <span onClick={handleDecrement}>-</span>
+            <button onClick={handleDecrement}>-</button>
             <span>{count}</span>
-            <span onClick={() => setCount(count + 1)}>+</span>
+            <button onClick={() => setCount(count + 1)}>+</button>
           </div>
         </div>
         <div className="btn-order">Order Now</div>

@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "category": "Meat",
+        "image": "../images/pizza/italian.png",
+        "name": "Italian",
+        "description": "Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...",
+        "price": 6.35
+    }
+]

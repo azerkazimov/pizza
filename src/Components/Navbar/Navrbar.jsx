@@ -14,9 +14,9 @@ const Navbar = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 993) {
-        setRow(false); // Switch to column layout if screen width is 993px or less
+        setRow(false);
       } else {
-        setRow(true); // Switch back to row layout if screen width is more than 993px
+        setRow(true);
       }
     };
 
@@ -75,10 +75,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="col-12 col-md-3 flex-container flex-align-center flex-justify-center">
-            <Link>
+            <Link to="#">
               <Button name="Login" />
             </Link>
-            <Link>
+            <Link to="#">
               <FontAwesomeIcon icon={faBagShopping} className="mx-2" />
             </Link>
           </div>

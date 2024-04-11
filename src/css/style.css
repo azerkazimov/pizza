@@ -119,8 +119,7 @@ a {
   padding-right: 10px !important;
 }
 
-.py-2, #pizza-list .pizza-item .pizza-price .count span:nth-child(1),
-#pizza-list .pizza-item .pizza-price .count span:nth-child(3) {
+.py-2 {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
 }
@@ -145,8 +144,7 @@ a {
   padding-left: 15px !important;
 }
 
-.px-3, #pizza-list .pizza-item .pizza-price .count span:nth-child(1),
-#pizza-list .pizza-item .pizza-price .count span:nth-child(3) {
+.px-3 {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
@@ -476,7 +474,7 @@ a {
   margin-left: 15px !important;
 }
 
-.mx-3, #pizza-list .pizza-item .pizza-price .count span:nth-child(2) {
+.mx-3, #pizza-list .pizza-item .pizza-price .count span {
   margin-left: 15px !important;
   margin-right: 15px !important;
 }
@@ -989,7 +987,7 @@ a {
   justify-content: center !important;
 }
 
-.flex-align-center, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item, .btn-menu, .btn {
+.flex-align-center, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .pizza-price .count, #pizza-list .pizza-item .pizza-price, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item, .btn-menu, .btn {
   align-items: center !important;
 }
 
@@ -1429,7 +1427,7 @@ a {
     margin-left: 41.6666666667%;
   }
 }
-.flex-container, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .pizza-price, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-store, .btn-menu, .btn, nav ul li a, #header .header-content .btn-order {
+.flex-container, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .pizza-price .count, #pizza-list .pizza-item .pizza-price, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-store, .btn-menu, .btn, nav ul li a, #header .header-content .btn-order {
   display: flex;
 }
 
@@ -1625,7 +1623,7 @@ a {
   font-size: 23px !important;
 }
 
-.font-size-24, #pizza-list .pizza-item .pizza-price .count span:nth-child(2), #pizza-list .pizza-item .pizza-price .price, #pizza-list .pizza-item h3 {
+.font-size-24, #pizza-list .pizza-item .pizza-price .count span, #pizza-list .pizza-item .pizza-price .price, #pizza-list .pizza-item h3 {
   font-size: 24px !important;
 }
 
@@ -2253,17 +2251,17 @@ svg {
 #pizza-list .pizza-item .pizza-price {
   gap: 30px;
 }
-#pizza-list .pizza-item .pizza-price .count span:nth-child(1),
-#pizza-list .pizza-item .pizza-price .count span:nth-child(3) {
-  border-radius: 50px;
+#pizza-list .pizza-item .pizza-price .count button {
+  border-radius: 50%;
   border: 2px solid #a3a3a3;
-  width: 30px;
-  height: 30px;
+  color: #fff;
+  background: transparent;
+  width: 40px;
+  height: 40px;
   transition: all 0.2s ease;
   cursor: pointer;
 }
-#pizza-list .pizza-item .pizza-price .count span:nth-child(1):hover,
-#pizza-list .pizza-item .pizza-price .count span:nth-child(3):hover {
+#pizza-list .pizza-item .pizza-price .count button:hover {
   background-color: #ffa228;
   border: 2px #ffa228;
 }
@@ -2273,6 +2271,7 @@ svg {
   border-radius: 20px;
   background-color: #ffa228;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 #pizza-list .pizza-item .btn-order:hover {
   background-color: #ff6432;
