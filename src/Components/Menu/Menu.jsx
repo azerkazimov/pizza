@@ -1,14 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Heading from "../Heading/Heading";
 import ButtonMenu from "../Button/ButtonMenu";
 import PizzaList from "../Pizza/PizzaList";
+// import data from "../../db/pizza.json";
+import axios from "axios";
 
 function Menu() {
   const [activeButton, setActiveButton] = useState("Show all");
+  const [data, setData] = useState([]);
 
   const handleButtonClick = (name) => {
     setActiveButton(name);
   };
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/pizzas")
+      .then((res) => setData(res.data))
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
+  const filteredPizzas =
+    activeButton === "Show all"
+      ? data
+      : data.filter((pizza) => pizza.category === activeButton);
 
   return (
     <div id="menu">
@@ -46,7 +63,7 @@ function Menu() {
           </div>
         </div>
       </div>
-      <PizzaList />
+      <PizzaList pizzas={filteredPizzas} />
     </div>
   );
 }

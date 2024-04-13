@@ -1,27 +1,14 @@
 import React, { useEffect, useState } from "react";
-import pizza from "../../images/pizza/italian.png";
-// import data from "../../db/pizza.json";
-// import axios from "axios";
 
-function Pizza() {
+function Pizza({ id, category, name, price, image, description }) {
   const [count, setCount] = useState(1);
-  const fixPrice = 9.95;
-  const [price, setPrice] = useState(fixPrice);
-  const [imgSize, setImgSize] = useState("100%");
+  const fixPrice = price;
+  const [prices, setPrice] = useState(fixPrice);
+  const [imgSize, setImgSize] = useState("1");
 
   useEffect(() => {
     setPrice((count * fixPrice).toFixed(2));
   }, [count, fixPrice]);
-
-//   useEffect(() => {
-//     axios.get(data)
-//       .then(response => {
-//         console.log(response.data);
-//       })
-//       .catch(error => {
-//         console.error('Error fetching data:', error);
-//       });
-//   }, []);
 
   const handleDecrement = () => {
     if (count > 1) {
@@ -32,21 +19,24 @@ function Pizza() {
   const handleImgSize = (size) => {
     setImgSize(size);
   };
-
   return (
     <div className="col-12 col-md-6 col-lg-3 p-2">
-      <div className="pizza-item">
-        <img src={pizza} style={{ width: imgSize }} alt="" />
-        <h3>Italian</h3>
-        <p>Description</p>
+      <div className="pizza-item" id={id} category={category}>
+        <img
+          src={process.env.PUBLIC_URL + image}
+          style={{ transform: `scale(${imgSize})` }}
+          alt=""
+        />
+        <h3>{name}</h3>
+        <p>{description}</p>
         <div className="pizza-size">
-          <span onClick={() => handleImgSize("100%")}>22</span>
-          <span onClick={() => handleImgSize("110%")}>28</span>
-          <span onClick={() => handleImgSize("120%")}>32</span>
+          <span onClick={() => handleImgSize("1")}>22</span>
+          <span onClick={() => handleImgSize("1.2")}>28</span>
+          <span onClick={() => handleImgSize("1.3")}>32</span>
         </div>
         <div className="btn-ingridient">+ Ingridients</div>
         <div className="pizza-price">
-          <div className="price">{price}$</div>
+          <div className="price">{prices}$</div>
           <div className="count">
             <button onClick={handleDecrement}>-</button>
             <span>{count}</span>

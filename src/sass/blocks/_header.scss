@@ -19,37 +19,6 @@
         }
     }
 
-    .header-image {
-        @extend .p-5;
-        position: relative;
-
-        .pizza img {
-            border-radius: 46px;
-            z-index: 1;
-        }
-
-
-        .slice,
-        .fries {
-            position: absolute;
-            width: 50%;
-            z-index: -1;
-            opacity: 0.8;
-        }
-
-        .slice {
-            top: -82px;
-            right: -35px;
-        }
-
-        .fries {
-            bottom: -50px;
-            left: -100px;
-        }
-    }
-
-    .header-image img {
-        width: 100%;
-    }
+    
 
 }

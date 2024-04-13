@@ -4,16 +4,16 @@
         @extend .flex-column;
         @extend .flex-justify-center;
         @extend .flex-align-center;
+        @extend .p-2;
 
-        border-radius: 50px;
-        background: linear-gradient(145deg, #121212, #151515);
-        box-shadow: 20px 20px 60px #111111,
-            -20px -20px 60px #171717;
+        border-radius: 20px;
+        background: linear-gradient(145deg, #191919, #1e1e1e);
 
         gap: 15px;
 
         img {
             width: 100%;
+            height: 250px;
         }
 
         h3 {
@@ -128,6 +128,24 @@
                 @extend .font-weight-700;
                 background-color: map-get($colors, primary);
             }
+        }
+    }
+
+    .popular {
+        @extend .p-5;
+        @extend .flex-container;
+        @extend .flex-justify-center;
+        @extend .flex-align-center;
+
+        background: url('../images/popular.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 30px;
+        opacity: 0.7;
+
+        h1 {
+            @extend .my-10;
         }
     }
 }

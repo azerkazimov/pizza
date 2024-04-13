@@ -1,6 +1,6 @@
 nav {
     @extend .py-5;
-   
+
     position: fixed;
     left: 0;
     top: 0;
@@ -9,7 +9,7 @@ nav {
     background-color: transparent;
     transition: 0.6s ease-in-out;
 
-    
+
 
     .logo img {
         width: 100%;
@@ -28,7 +28,8 @@ nav {
                 line-height: 43px;
                 font-size: 0.9rem;
                 transition: all 0.2s ease;
-                color: map-get($colors, info );
+                color: map-get($colors, info);
+                
 
                 &:hover {
                     color: map-get($colors, primary);
@@ -55,7 +56,7 @@ nav {
             height: 5px;
             width: 100%;
             border-radius: 0.1rem;
-            background: map-get($colors, primary );
+            background: map-get($colors, primary);
             transition: ease-out 0.3s;
         }
     }

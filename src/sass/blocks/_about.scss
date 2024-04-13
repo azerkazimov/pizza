@@ -1,0 +1,41 @@
+#about {
+    transform: translateY(100px);
+    .about-us {
+        @extend .flex-container;
+        @extend .flex-column;
+        @extend .px-10;
+
+        p {
+            @extend .py-4;
+            color: map-get($colors, info)
+        }
+
+        .about-pizza {
+
+            @extend .flex-container;
+            @extend .flex-column;
+            @extend .flex-align-center;
+
+            .first-layer,
+            .second-layer {
+                @extend .flex-container;
+            }
+
+            .first-layer{
+                opacity: 0.8;
+            }
+
+            .second-layer{
+                transform: translateY(60px);
+                z-index: 1;
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+        }
+    }
+
+}

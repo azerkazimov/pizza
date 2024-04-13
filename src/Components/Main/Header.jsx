@@ -1,16 +1,16 @@
 import React from "react";
 import Heading from "../Heading/Heading";
 import Button from "../Button/Button";
+
 import pizza from "../../images/main-banner.png";
-import slice from "../../images/pizza-slice.png";
-import fries from "../../images/fries.png";
+import Banner from "../Banner/Banner";
 
 function Header() {
   return (
     <div id="header">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-6 p-5 flex-container flex-column flex-justify-center flex-align-center">
+          <div className="col-md-12 col-lg-6 p-5 flex-container flex-column flex-justify-center flex-align-center">
             <div className="header-content">
               <Heading head="The Faster Pizza Delivery" />
               <div className="container">
@@ -35,18 +35,8 @@ function Header() {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 p-3">
-            <div className="header-image">
-              <div className="slice">
-                <img src={slice} alt="Pizza souse" />
-              </div>
-              <div className="pizza">
-                <img src={pizza} alt="Pizza souse" />
-              </div>
-              <div className="fries">
-                <img src={fries} alt="Pizza souse" />
-              </div>
-            </div>
+          <div className="col-md-12 col-lg-6 p-3">
+            <Banner pizza={pizza} />
           </div>
         </div>
       </div>
