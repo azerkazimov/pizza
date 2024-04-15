@@ -30,9 +30,9 @@ function Pizza({ id, category, name, price, image, description }) {
         <h3>{name}</h3>
         <p>{description}</p>
         <div className="pizza-size">
-          <span onClick={() => handleImgSize("1")}>22</span>
-          <span onClick={() => handleImgSize("1.2")}>28</span>
-          <span onClick={() => handleImgSize("1.3")}>32</span>
+          <span onClick={() => handleImgSize("1")}>S</span>
+          <span onClick={() => handleImgSize("1.2")}>M</span>
+          <span onClick={() => handleImgSize("1.3")}>L</span>
         </div>
         <div className="btn-ingridient">+ Ingridients</div>
         <div className="pizza-price">

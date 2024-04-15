@@ -15,7 +15,7 @@ function Menu() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/pizzas")
+      .get("http://localhost:5003/pizzas")
       .then((res) => setData(res.data))
       .catch((err) => {
         console.log(err);

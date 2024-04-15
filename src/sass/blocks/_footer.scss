@@ -7,7 +7,7 @@
         li {
             @extend .font-size-14;
             @extend .py-1;
-            color: map-get($colors, info);
+            color: map-get($colors, dark);
         }
 
         li:nth-child(1) {
@@ -15,5 +15,25 @@
             @extend .font-weight-700;
             color: map-get($colors, natural);
         }
+    }
+
+    svg {
+        @extend .font-size-28;
+        color: map-get($colors, primary)
+    }
+
+    .sosial-links {
+        @extend .flex-container;
+        @extend .flex-justify-end;
+        @extend .p-5;
+        gap: 15px;
+    }
+    .phone {
+        @extend .flex-container;
+        @extend .font-size-18;
+        @extend .font-weight-700;
+        @extend .p-5;
+        gap: 15px;
+        color: map-get($colors, primary )
     }
 }

@@ -29,7 +29,7 @@ nav {
                 font-size: 0.9rem;
                 transition: all 0.2s ease;
                 color: map-get($colors, info);
-                
+
 
                 &:hover {
                     color: map-get($colors, primary);
@@ -59,6 +59,14 @@ nav {
             background: map-get($colors, primary);
             transition: ease-out 0.3s;
         }
+    }
+
+    svg {
+        @extend .p-2;
+        @extend .font-size-18;
+        color: map-get($colors, natural);
+        background: map-get($colors, success);
+        border-radius: 50%;
     }
 }
 

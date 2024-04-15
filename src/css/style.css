@@ -98,7 +98,7 @@ p {
   padding-bottom: 5px !important;
 }
 
-.p-2, #event .event-item, #pizza-list .pizza-item, svg {
+.p-2, #event .event-item, #pizza-list .pizza-item, nav svg {
   padding: 10px !important;
 }
 
@@ -128,7 +128,7 @@ p {
   padding-bottom: 10px !important;
 }
 
-.p-3, #pizza-list .pizza-item .pizza-size span {
+.p-3 {
   padding: 15px !important;
 }
 
@@ -153,7 +153,7 @@ p {
   padding-right: 15px !important;
 }
 
-.py-3, #header .header-content p {
+.py-3, #main .header-content p {
   padding-top: 15px !important;
   padding-bottom: 15px !important;
 }
@@ -188,7 +188,7 @@ p {
   padding-bottom: 20px !important;
 }
 
-.p-5, .banner-image, #pizza-list .popular {
+.p-5, .banner-image, #pizza-list .popular, #footer .phone, #footer .sosial-links {
   padding: 25px !important;
 }
 
@@ -483,7 +483,7 @@ p {
   margin-right: 15px !important;
 }
 
-.my-3, #header .header-content iframe {
+.my-3, #main .header-content iframe {
   margin-top: 15px !important;
   margin-bottom: 15px !important;
 }
@@ -979,7 +979,7 @@ p {
   align-items: start !important;
 }
 
-.flex-justify-end {
+.flex-justify-end, #footer .sosial-links {
   justify-content: end !important;
 }
 
@@ -987,11 +987,11 @@ p {
   align-items: end !important;
 }
 
-.flex-justify-center, #event .event-item .btn-event, #pizza-list .popular, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-menu, .btn {
+.flex-justify-center, #event .event-item .btn-event, #pizza-list .popular, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size span, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-menu, .btn {
   justify-content: center !important;
 }
 
-.flex-align-center, #event .event-item .btn-event, #pizza-list .popular, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .pizza-price .count, #pizza-list .pizza-item .pizza-price, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item, .btn-menu, .btn, #about .about-us .about-pizza {
+.flex-align-center, #event .event-item .btn-event, #pizza-list .popular, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .pizza-price .count, #pizza-list .pizza-item .pizza-price, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size span, #pizza-list .pizza-item, .btn-menu, .btn, #about .about-us .about-pizza {
   align-items: center !important;
 }
 
@@ -1431,8 +1431,8 @@ p {
     margin-left: 41.6666666667%;
   }
 }
-.flex-container, #event .event-item .btn-event, #pizza-list .popular, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .pizza-price .count, #pizza-list .pizza-item .pizza-price, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-store, .btn-menu, .btn, #about .about-us .about-pizza .first-layer,
-#about .about-us .about-pizza .second-layer, #about .about-us .about-pizza, #about .about-us, nav ul li a, #header .header-content .btn-order {
+.flex-container, #event .event-item .btn-event, #pizza-list .popular, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .pizza-price .count, #pizza-list .pizza-item .pizza-price, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size span, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-store, .btn-menu, .btn, #about .about-us .about-pizza .first-layer,
+#about .about-us .about-pizza .second-layer, #about .about-us .about-pizza, #about .about-us, nav ul li a, #footer .phone, #footer .sosial-links, #main .header-content .btn-order {
   display: flex;
 }
 
@@ -1513,15 +1513,15 @@ p {
 }
 
 .bg-dark {
-  background-color: #292b2c !important;
+  background-color: #515151 !important;
 }
 
 .text-dark {
-  color: #292b2c !important;
+  color: #515151 !important;
 }
 
 .border-dark {
-  border-color: #292b2c !important;
+  border-color: #515151 !important;
 }
 
 .bg-natural {
@@ -1604,7 +1604,7 @@ p {
   font-size: 17px !important;
 }
 
-.font-size-18, svg {
+.font-size-18, nav svg, #footer .phone {
   font-size: 18px !important;
 }
 
@@ -1644,7 +1644,7 @@ p {
   font-size: 27px !important;
 }
 
-.font-size-28 {
+.font-size-28, #footer svg {
   font-size: 28px !important;
 }
 
@@ -1976,7 +1976,7 @@ p {
   font-weight: 600 !important;
 }
 
-.font-weight-700, #pizza-list .pizza-item .btn-order:hover, #pizza-list .pizza-item .btn-ingridient:hover, #pizza-list .pizza-item .pizza-size span:hover, #footer ul li:nth-child(1) {
+.font-weight-700, #pizza-list .pizza-item .btn-order:hover, #pizza-list .pizza-item .btn-ingridient:hover, #pizza-list .pizza-item .pizza-size span:hover, #footer .phone, #footer ul li:nth-child(1) {
   font-weight: 700 !important;
 }
 
@@ -2065,16 +2065,16 @@ p {
     max-width: 540px !important;
   }
 }
-#header {
+#main {
   margin-top: 150px;
 }
-#header .header-content p {
+#main .header-content p {
   color: #a3a3a3;
 }
-#header .header-content iframe {
+#main .header-content iframe {
   border-radius: 20px;
 }
-#header .header-content .btn-order {
+#main .header-content .btn-order {
   position: relative;
 }
 
@@ -2082,10 +2082,20 @@ p {
   transform: translateY(150px);
 }
 #footer ul li {
-  color: #a3a3a3;
+  color: #515151;
 }
 #footer ul li:nth-child(1) {
   color: #fff;
+}
+#footer svg {
+  color: #ff6432;
+}
+#footer .sosial-links {
+  gap: 15px;
+}
+#footer .phone {
+  gap: 15px;
+  color: #ff6432;
 }
 
 nav {
@@ -2131,6 +2141,11 @@ nav .burger-menu span {
   border-radius: 0.1rem;
   background: #ff6432;
   transition: ease-out 0.3s;
+}
+nav svg {
+  color: #fff;
+  background: linear-gradient(to right, #ff6432, #ffa228);
+  border-radius: 50%;
 }
 
 .active {
@@ -2204,12 +2219,6 @@ nav .burger-menu span {
   gap: 10px;
 }
 
-svg {
-  color: #fff;
-  background: linear-gradient(to right, #ff6432, #ffa228);
-  border-radius: 50%;
-}
-
 .heading {
   margin: 0 auto;
 }
@@ -2224,7 +2233,6 @@ svg {
 }
 #pizza-list .pizza-item img {
   width: 100%;
-  height: 250px;
 }
 #pizza-list .pizza-item p {
   color: #a3a3a3;
@@ -2233,6 +2241,8 @@ svg {
   gap: 15px;
 }
 #pizza-list .pizza-item .pizza-size span {
+  width: 50px;
+  height: 50px;
   color: #a3a3a3;
   border: 2px solid #a3a3a3;
   border-radius: 50%;

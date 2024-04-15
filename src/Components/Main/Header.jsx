@@ -7,7 +7,7 @@ import Banner from "../Banner/Banner";
 
 function Header() {
   return (
-    <div id="header">
+    <div id="main">
       <div className="container">
         <div className="row">
           <div className="col-md-12 col-lg-6 p-5 flex-container flex-column flex-justify-center flex-align-center">

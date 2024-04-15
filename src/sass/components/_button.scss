@@ -63,10 +63,3 @@
 
 }
 
-svg {
-    @extend .p-2;
-    @extend .font-size-18;
-    color: map-get($colors, natural);
-    background: map-get($colors, success);
-    border-radius: 50%;
-}
