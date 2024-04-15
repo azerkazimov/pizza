@@ -15,7 +15,7 @@ function Menu() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5003/pizzas")
+      .get("https://pizza-db.vercel.app/pizzas")
       .then((res) => setData(res.data))
       .catch((err) => {
         console.log(err);
