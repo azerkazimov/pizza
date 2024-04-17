@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../images/logo.png";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";

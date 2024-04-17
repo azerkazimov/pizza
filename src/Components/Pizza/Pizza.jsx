@@ -33,6 +33,7 @@ function Pizza({ id, category, name, price, image, description }) {
     setOrder({ ...orders, newOrder });
   };
 
+
   return (
     <div className="col-12 col-md-6 col-lg-3 p-2">
       <div className="pizza-item" key={id} id={id} category={category}>
