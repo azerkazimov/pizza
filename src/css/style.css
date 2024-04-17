@@ -1976,7 +1976,7 @@ p {
   font-weight: 600 !important;
 }
 
-.font-weight-700, #pizza-list .pizza-item .btn-order:hover, #pizza-list .pizza-item .btn-ingridient:hover, #pizza-list .pizza-item .pizza-size span:hover, #footer .phone, #footer ul li:nth-child(1) {
+.font-weight-700, #pizza-list .pizza-item .btn-order:hover, #pizza-list .pizza-item .btn-ingridient:hover, #pizza-list .pizza-item .pizza-size span:hover, #footer .phone, #footer ul li:nth-child(1), #footer ul li:hover {
   font-weight: 700 !important;
 }
 
@@ -2083,6 +2083,11 @@ p {
 }
 #footer ul li {
   color: #515151;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+#footer ul li:hover {
+  color: #ff6432;
 }
 #footer ul li:nth-child(1) {
   color: #fff;
@@ -2253,6 +2258,11 @@ nav svg {
   background-color: #ffa228;
   color: #fff;
   border: 2px solid #ffa228;
+}
+#pizza-list .pizza-item .pizza-size .selected {
+  background-color: #ffa228;
+  border: 2px solid #ffa228;
+  color: #14142B;
 }
 #pizza-list .pizza-item .btn-ingridient {
   width: 200px;

@@ -8,6 +8,13 @@
             @extend .font-size-14;
             @extend .py-1;
             color: map-get($colors, dark);
+            transition: all 0.3s;
+            cursor: pointer;
+
+            &:hover {
+                @extend .font-weight-700;
+                color: map-get($colors, primary);
+            }
         }
 
         li:nth-child(1) {
@@ -28,12 +35,13 @@
         @extend .p-5;
         gap: 15px;
     }
+
     .phone {
         @extend .flex-container;
         @extend .font-size-18;
         @extend .font-weight-700;
         @extend .p-5;
         gap: 15px;
-        color: map-get($colors, primary )
+        color: map-get($colors, primary)
     }
 }

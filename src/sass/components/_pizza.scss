@@ -50,6 +50,12 @@
                     border: 2px solid map-get($colors, secondary);
                 }
             }
+
+            .selected {
+                background-color: map-get($colors, secondary);
+                border: 2px solid map-get($colors, secondary );
+                color: map-get($colors, inky )
+            }
         }
 
         .btn-ingridient {

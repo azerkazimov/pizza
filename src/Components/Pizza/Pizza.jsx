@@ -5,6 +5,8 @@ function Pizza({ id, category, name, price, image, description }) {
   const fixPrice = price;
   const [prices, setPrice] = useState(fixPrice);
   const [imgSize, setImgSize] = useState("1");
+  const [orders, setOrder] = useState({});
+  const [size, setSize] = useState("S");
 
   useEffect(() => {
     setPrice((count * fixPrice).toFixed(2));
@@ -16,12 +18,24 @@ function Pizza({ id, category, name, price, image, description }) {
     }
   };
 
-  const handleImgSize = (size) => {
-    setImgSize(size);
+  const handleImgSize = (sizeSelect) => {
+    setImgSize(sizeSelect);
+    setSize(sizeSelect === "1" ? "S" : sizeSelect === "1.2" ? "M" : "L");
   };
+
+  const handleOrder = () => {
+    const newOrder = {
+      name: name,
+      size: size,
+      price: prices,
+      count: count,
+    };
+    setOrder({ ...orders, newOrder });
+  };
+
   return (
     <div className="col-12 col-md-6 col-lg-3 p-2">
-      <div className="pizza-item" id={id} category={category}>
+      <div className="pizza-item" key={id} id={id} category={category}>
         <img
           src={process.env.PUBLIC_URL + image}
           style={{ transform: `scale(${imgSize})` }}
@@ -30,9 +44,24 @@ function Pizza({ id, category, name, price, image, description }) {
         <h3>{name}</h3>
         <p>{description}</p>
         <div className="pizza-size">
-          <span onClick={() => handleImgSize("1")}>S</span>
-          <span onClick={() => handleImgSize("1.2")}>M</span>
-          <span onClick={() => handleImgSize("1.3")}>L</span>
+          <span
+            className={size === "S" ? "selected" : ""}
+            onClick={() => handleImgSize("1")}
+          >
+            S
+          </span>
+          <span
+            className={size === "M" ? "selected" : ""}
+            onClick={() => handleImgSize("1.2")}
+          >
+            M
+          </span>
+          <span
+            className={size === "L" ? "selected" : ""}
+            onClick={() => handleImgSize("1.3")}
+          >
+            L
+          </span>
         </div>
         <div className="btn-ingridient">+ Ingridients</div>
         <div className="pizza-price">
@@ -43,7 +72,9 @@ function Pizza({ id, category, name, price, image, description }) {
             <button onClick={() => setCount(count + 1)}>+</button>
           </div>
         </div>
-        <div className="btn-order">Order Now</div>
+        <div className="btn-order" onClick={handleOrder}>
+          Order Now
+        </div>
       </div>
     </div>
   );

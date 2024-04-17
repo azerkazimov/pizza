@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import Heading from "../Heading/Heading";
 import ButtonMenu from "../Button/ButtonMenu";
 import PizzaList from "../Pizza/PizzaList";
-// import data from "../../db/pizza.json";
 import axios from "axios";
 
 function Menu() {

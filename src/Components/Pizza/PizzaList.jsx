@@ -1,9 +1,15 @@
 import React from "react";
 import Pizza from "./Pizza";
+import useCardStore from "../store/cardStore";
 
 function PizzaList({ pizzas }) {
   const firstFourPizza = pizzas.slice(0, 4);
   const afterFourPizza = pizzas.length > 4 ? pizzas.slice(4) : [];
+  const { card, removeFromCard, clearCard } = useCardStore((state) => ({
+    card: state.card,
+    removeFromCard: state.removeFromCard,
+    clearCard: state.clearCard,
+  }));
 
   return (
     <div id="pizza-list">

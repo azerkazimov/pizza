@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 import Button from "../Button/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import { Route, Routes } from "react-router-dom";
+import Basket from "../Basket/Basket";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -78,9 +80,12 @@ const Navbar = () => {
             <Link to="#">
               <Button name="Login" />
             </Link>
-            <Link to="#">
+            <Link to="/basket">
               <FontAwesomeIcon icon={faBagShopping} className="mx-2" />
             </Link>
+            <Routes>
+              <Route path="/basket" element={<Basket />} />
+            </Routes>
           </div>
         </div>
       </div>
