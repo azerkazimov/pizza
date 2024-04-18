@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import useCardStore from "../store/cardStore";
 
 function Pizza({ id, category, name, price, image, description }) {
   const [count, setCount] = useState(1);
@@ -7,6 +8,7 @@ function Pizza({ id, category, name, price, image, description }) {
   const [imgSize, setImgSize] = useState("1");
   const [orders, setOrder] = useState({});
   const [size, setSize] = useState("S");
+  const addToCard = useCardStore((state) => state.addToCard);
 
   useEffect(() => {
     setPrice((count * fixPrice).toFixed(2));
@@ -25,14 +27,15 @@ function Pizza({ id, category, name, price, image, description }) {
 
   const handleOrder = () => {
     const newOrder = {
+      id: id,
       name: name,
       size: size,
       price: prices,
       count: count,
     };
     setOrder({ ...orders, newOrder });
+    addToCard(newOrder);
   };
-
 
   return (
     <div className="col-12 col-md-6 col-lg-3 p-2">
