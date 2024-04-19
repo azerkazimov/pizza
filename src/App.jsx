@@ -6,7 +6,7 @@ import Events from "./Components/Event/Events";
 import About from "./Components/About/About";
 import Footer from "./Components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
-import Basket from "./Components/Basket/Basket";
+import Basket from "./Pages/Basket/Basket";
 import Loader from "./Components/Loader/Loader";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     const setLoading = () => {
       setTimeout(() => {
         setIsLoading(false);
-      }, 4000);
+      }, 2000);
     };
     setLoading();
   });

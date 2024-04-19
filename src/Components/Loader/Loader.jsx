@@ -14,7 +14,7 @@ function Loader() {
     const intervalId = setInterval(() => {
       currentSliceIndex = (currentSliceIndex + 1) % slices.length;
       setLoader(slices[currentSliceIndex]);
-    }, 1000);
+    }, 500);
 
     return () => clearInterval(intervalId);
   }, []);

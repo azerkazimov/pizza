@@ -1,0 +1,27 @@
+#basket {
+    margin-top: 150px;
+    .order-item {
+        @extend .p-3;
+        border: 2px solid map-get($colors, primary);
+        border-radius: 20px;
+        text-align: center;
+
+        img{
+            width: 100%;
+        }
+
+        h3, span{
+            @extend .font-weight-700;
+            color: map-get($colors, primary )
+        }
+
+        .details{
+            @extend .flex-container;
+            @extend .flex-justify-center;
+
+            gap: 20px;
+        }
+
+
+    }
+}

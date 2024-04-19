@@ -28,6 +28,7 @@ function Pizza({ id, category, name, price, image, description }) {
   const handleOrder = () => {
     const newOrder = {
       id: id,
+      image: image,
       name: name,
       size: size,
       price: prices,

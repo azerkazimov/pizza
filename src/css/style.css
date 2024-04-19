@@ -128,7 +128,7 @@ p {
   padding-bottom: 10px !important;
 }
 
-.p-3 {
+.p-3, #basket .order-item {
   padding: 15px !important;
 }
 
@@ -987,7 +987,7 @@ p {
   align-items: end !important;
 }
 
-.flex-justify-center, #event .event-item .btn-event, #pizza-list .popular, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size span, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-menu, .btn {
+.flex-justify-center, #basket .order-item .details, #event .event-item .btn-event, #pizza-list .popular, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size span, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-menu, .btn {
   justify-content: center !important;
 }
 
@@ -1431,7 +1431,7 @@ p {
     margin-left: 41.6666666667%;
   }
 }
-.flex-container, #event .event-item .btn-event, #pizza-list .popular, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .pizza-price .count, #pizza-list .pizza-item .pizza-price, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size span, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-store, .btn-menu, .btn, #about .about-us .about-pizza .first-layer,
+.flex-container, #basket .order-item .details, #event .event-item .btn-event, #pizza-list .popular, #pizza-list .pizza-item .btn-order, #pizza-list .pizza-item .pizza-price .count, #pizza-list .pizza-item .pizza-price, #pizza-list .pizza-item .btn-ingridient, #pizza-list .pizza-item .pizza-size span, #pizza-list .pizza-item .pizza-size, #pizza-list .pizza-item, .btn-store, .btn-menu, .btn, #about .about-us .about-pizza .first-layer,
 #about .about-us .about-pizza .second-layer, #about .about-us .about-pizza, #about .about-us, nav ul li a, #footer .phone, #footer .sosial-links, #main .header-content .btn-order {
   display: flex;
 }
@@ -1976,7 +1976,7 @@ p {
   font-weight: 600 !important;
 }
 
-.font-weight-700, #pizza-list .pizza-item .btn-order:hover, #pizza-list .pizza-item .btn-ingridient:hover, #pizza-list .pizza-item .pizza-size span:hover, #footer .phone, #footer ul li:nth-child(1), #footer ul li:hover {
+.font-weight-700, #basket .order-item h3, #basket .order-item span, #pizza-list .pizza-item .btn-order:hover, #pizza-list .pizza-item .btn-ingridient:hover, #pizza-list .pizza-item .pizza-size span:hover, #footer .phone, #footer ul li:nth-child(1), #footer ul li:hover {
   font-weight: 700 !important;
 }
 
@@ -2383,4 +2383,22 @@ nav svg {
 }
 #loader .loader-svg {
   position: fixed;
+}
+
+#basket {
+  margin-top: 150px;
+}
+#basket .order-item {
+  border: 2px solid #ff6432;
+  border-radius: 20px;
+  text-align: center;
+}
+#basket .order-item img {
+  width: 100%;
+}
+#basket .order-item h3, #basket .order-item span {
+  color: #ff6432;
+}
+#basket .order-item .details {
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */
